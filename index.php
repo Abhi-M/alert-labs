@@ -248,6 +248,25 @@
                         <div class="siimple-grid-col siimple-grid-col--2"></div>
                 </div>
 
+                              <div class="siimple-grid-row">
+
+                                        <div class="siimple-grid-col siimple-grid-col--2"></div>
+                                        <div class="siimple-grid-col siimple-grid-col--2"></div>
+                                        <div class="siimple-grid-col siimple-grid-col--1"></div>
+                                    <a href='step-15.php'  target="_blank">
+                                      <div class="siimple-grid-col siimple-grid-col--2"><div class="siimple-card" style="max-width:300px">
+                              <div class="siimple-card-header">
+                                  Alert Lab 15
+                              </div>
+                              <div class="siimple-card-body">
+                                  HTML encoding
+                              </div>
+                            </div></div>
+                            </a>
+
+                                      <div class="siimple-grid-col siimple-grid-col--2"></div>
+                                        <div class="siimple-grid-col siimple-grid-col--2"></div>
+                                </div>
 
       <div class="siimple-grid-row">
         <div class="siimple-grid-col siimple-grid-col--12" style="text-align:center;">
