@@ -9,4 +9,4 @@ Cross-site scripting labs for web application security enthusiasts
 
 
 
-<img src="screenshot.jpg" alt="Alert-Labs-logo" height="600"/>
+<img src="screenshot.jpg" alt="Alert-Labs-logo" height="500"/>
