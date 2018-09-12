@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  webserver:
+    build: ./docker/webserver
+    image: alert-labs
+    ports:
+      - "8090:80"
+    volumes:
+      - ./www:/var/www/html/

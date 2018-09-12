@@ -2945,3 +2945,6 @@ body {
   font-size: 13px !important;
 }
 
+a:link, a:visited, a:hover,a:active {
+    color: white;text-decoration:none;
+}
