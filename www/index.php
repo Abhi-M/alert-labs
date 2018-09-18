@@ -117,7 +117,7 @@
       Alert Lab 4
   </div>
   <div class="siimple-card-body">
-      Referrer URL
+      Referer URL
   </div>
 </div></div>
 </a>
