@@ -1,47 +1,42 @@
+<?php
+if(!isset($_GET['status'])) {
+  header('Location: step-15.php?status=good');
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Alert Labs - Cross-site scripting labs for web application security enthusiasts
+    <title>15 - RegEx filter #1
     </title>
     <link rel="stylesheet" href="siimple.css">
     <link href="security.png" rel="icon" type="image/x-icon">
   </head>
-  <body style="">
+  <body>
     <div class="siimple-grid">
       <div class="siimple-grid-row">
-        <div class="siimple-grid-col siimple-grid-col--4" style="">
+
+        <div class="siimple-grid-col siimple-grid-col--12" style="font-size:7em;">
+
 		<?php
+	 if(isset($_GET['status'])) {
+    $status =  $_GET['status'];
 
-		if (isset($_POST['fname'])) {
+    $status = preg_replace('/<(?:\w+)\W+?[\w]/', '', $status);
 
-      $name = $_POST['fname'];
-
-
-			echo "<div style=\"text-align:center;font-size:4em;\">Hello, " . htmlspecialchars($name) . "</div>";
-
-		}
-		else{
-
-			echo '<form name="myForm" action="step-15.php" onsubmit="return validateForm()" method="post">
-			<div class="siimple-form">
-			<div class="siimple-form-title">Send a comment</div>
-			<div class="siimple-form-detail">Fill the form to contact us.</div>
-			<div class="siimple-form-field">
-				<div class="siimple-form-field-label">Your name</div>
-				<input type="text" class="siimple-input siimple-input--fluid" placeholder="Your name" name="fname">
-			</div>
-			<div class="siimple-form-field">
-				<input class="siimple-btn siimple-btn--blue" type="submit"  value="Send">
-			</div>
-			</div>
-			</form>';
-
-		}
-
+	echo $status;
+}
 ?>
+        </div>
+        <div style="color:#ecf0f1;">
+          We have the following RegEx: /&#x3C;(?:\w+)\W+?[\w]/
         </div>
       </div>
     </div>
   </body>
 </html>
+<!--
+/*
+<<a|ascript>alert('xss');</script>
+*/
+-->

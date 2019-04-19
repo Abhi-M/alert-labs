@@ -26,7 +26,7 @@ if(isset($_POST['username'])) {
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Alert Labs - Cross-site scripting labs for web application security enthusiasts
+    <title>07 - Login page
     </title>
     <link rel="stylesheet" href="siimple.css">
     <link href="security.png" rel="icon" type="image/x-icon">
@@ -34,7 +34,7 @@ if(isset($_POST['username'])) {
   <body style="">
     <div class="siimple-grid">
       <div class="siimple-grid-row">
-        <div class="siimple-grid-col siimple-grid-col--4" style="">
+        <div class="siimple-grid-col siimple-grid-col--4" style="background:rgba(255,255,255,0.9)">
           <?php
           if(isset($_GET['message'])) {
            $status =  '<div class="siimple-alert siimple-alert--error">' . $_GET['message'] . '</div>';

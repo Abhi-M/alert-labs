@@ -1,37 +1,42 @@
 <?php
 if(!isset($_GET['status'])) {
-header('Location: step-10.php?status=good');
+  header('Location: step-10.php?status=Z29vZA==');
 }
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Alert Labs - Cross-site scripting labs for web application security enthusiasts
+    <title>10 - Base64
     </title>
     <link rel="stylesheet" href="siimple.css">
     <link href="security.png" rel="icon" type="image/x-icon">
   </head>
-  <body style="background:#8e44ad;">
+  <body>
     <div class="siimple-grid">
       <div class="siimple-grid-row">
 
-        <div class="siimple-grid-col siimple-grid-col--12" style="text-align:center;font-size:7em;color:white;">
+        <div class="siimple-grid-col siimple-grid-col--12" style="font-size:7em;">
 
-          <?php
-          if(isset($_GET['status'])) {
-            $status =  $_GET['status'];
+		<?php
+	 if(isset($_GET['status'])) {
+    $status =  $_GET['status'];
 
-            $status = preg_replace('/script/', '', $status);
+    $status = base64_decode($status);
 
-            echo $status;
-          }
-          ?>
+	echo $status;
+}
+?>
         </div>
         <div style="color:#ecf0f1;">
-          We have blacklisted <b>script</b>
+          We have base64 encoded our inputs
         </div>
       </div>
     </div>
   </body>
 </html>
+<!--
+/*
+Base64
+*/
+-->

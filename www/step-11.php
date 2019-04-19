@@ -7,40 +7,31 @@ header('Location: step-11.php?status=good');
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Alert Labs - Cross-site scripting labs for web application security enthusiasts
+    <title>11 - Removes alert
     </title>
     <link rel="stylesheet" href="siimple.css">
     <link href="security.png" rel="icon" type="image/x-icon">
   </head>
-  <body style="background:#8e44ad;">
+  <body>
     <div class="siimple-grid">
       <div class="siimple-grid-row">
 
-        <div class="siimple-grid-col siimple-grid-col--12" style="text-align:center;font-size:7em;color:white;">
+        <div class="siimple-grid-col siimple-grid-col--12" style="font-size:7em;">
+          <?php
+          if(isset($_GET['status'])) {
+            $status =  $_GET['status'];
 
-		<?php
-    if(isset($_GET['status'])) {
-    $status =  $_GET['status'];
+          $status = preg_replace('/alert/', '', $status);
 
-    $status = preg_replace('/script/', '', $status);
-    $status = preg_replace('/img/', '', $status);
-    $status = preg_replace('/alert/', '', $status);
-    $status = preg_replace('/prompt/', '', $status);
+          echo $status;
+          }
+          ?>
 
-    echo $status;
-    }
-?>
         </div>
         <div style="color:#ecf0f1;">
-          We have blacklisted <b>script</b><br>
-          We have blacklisted <b>img</b><br>
-          We have blacklisted <b>alert</b><br>
-          We have blacklisted <b>prompt</b>
+          We remove alert
         </div>
       </div>
     </div>
   </body>
 </html>
-<!--
-<svg onload=alert(1)>
--->

@@ -1,13 +1,13 @@
 <?php
 if(!isset($_GET['status'])) {
-  header('Location: step-14.php?status=good');
+  header('Location: step-20.php?status=good');
 }
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>14 - Converts &lt; and &gt; to HTML entities
+    <title>20 - Converts special characters to HTML entities on an HTML input value
     </title>
     <link rel="stylesheet" href="siimple.css">
     <link href="security.png" rel="icon" type="image/x-icon">
@@ -18,19 +18,14 @@ if(!isset($_GET['status'])) {
 
         <div class="siimple-grid-col siimple-grid-col--12" style="font-size:7em;">
 
-		<?php
-	 if(isset($_GET['status'])) {
-    $status =  $_GET['status'];
+          <button  class="siimple-btn siimple-btn--grey" onclick='alert("<?php echo htmlspecialchars($_GET['status']); ?>")'>
+             Read your status
+          </button>
 
-    $status = str_replace('<','&lt;', $status);
-    $status = str_replace('>','&gt;', $status);
 
-	echo $status;
-}
-?>
         </div>
         <div style="color:#ecf0f1;">
-          We converts &lt; and &gt; to HTML entities
+          We converts special characters to HTML entities on an HTML input value
         </div>
       </div>
     </div>
@@ -38,7 +33,6 @@ if(!isset($_GET['status'])) {
 </html>
 <!--
 /*
-https://securityonline.info/bypass-xss-filtering-using-hex-encoding/
-%26%23x003C;script%26%23x003E;alert(1)%26%23x003C;/script%26%23x003E;
+https://stackoverflow.com/questions/27249888/circumventing-htmlspecialcharsaddslashesinput-for-html-javascript-injection
 */
 -->
